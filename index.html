@@ -3,107 +3,90 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jason Torres Reyes | Cybersecurity Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f8f9fa;
-            color: #212529;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #003366;
-            color: #fff;
-            padding: 30px 0;
-            text-align: center;
-        }
-        .container {
-            max-width: 900px;
-            background-color: #fff;
-            margin: 30px auto;
-            padding: 40px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-        }
-        .profile {
-            text-align: center;
-        }
-        .profile img {
-            border-radius: 10px;
-            width: 150px;
-            height: auto;
-            margin-bottom: 20px;
-            border: 4px solid #003366;
-        }
-        h1, h2 {
-            color: #003366;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        a {
-            color: #0056b3;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .btn {
-            display: inline-block;
-            background-color: #003366;
-            color: white;
-            padding: 10px 25px;
-            border-radius: 5px;
-            text-decoration: none;
-            margin: 20px 0;
-        }
-        .section {
-            margin-top: 40px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="profile.jpg" type="image/jpg">
 </head>
 <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Jason</a>
+            <ul class="nav__list">
+                <li><a href="#home" class="nav__link active-link">Home</a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#skills" class="nav__link">Skills</a></li>
+                <li><a href="#projects" class="nav__link">Projects</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <h1>Jason Torres Reyes</h1>
-    <p>Cybersecurity Portfolio & Resume</p>
-</header>
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content">
+                    <h1 class="home__title">Hello, I'm <span>Jason Torres Reyes</span></h1>
+                    <h3 class="home__subtitle">Aspiring Cybersecurity Analyst</h3>
+                    <p class="home__description">
+                        Passionate about ethical hacking, cloud security, and system defense. Experienced with AWS infrastructure and Microsoft 365 administration.
+                    </p>
+                    <a download href="CV.md" class="button button--flex">Download CV</a>
+                </div>
+                <div class="home__img">
+                    <img src="profile.jpg" alt="Jason Torres Reyes" class="home__blob-img">
+                </div>
+            </div>
+        </section>
 
-<div class="container">
-    <div class="profile">
-        <img src="profile.jpg" alt="Jason Torres Reyes">
-        <p><strong>Email:</strong> jjtorres716@gmail.com<br>
-        <strong>GitHub:</strong> <a href="https://github.com/jtr2515" target="_blank">jtr2515</a><br>
-        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jason-torres-reyes-9048242b6/" target="_blank">View Profile</a></p>
-    </div>
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <p class="about__description">
+                I'm currently studying an Associate of Science in Information Technology at Atlantis University (Expected 2025). I have hands-on experience in vulnerability scanning, Microsoft 365 policy management, and AWS cloud architecture using VPC, EC2, Auto Scaling Groups, and CI/CD.
+            </p>
+        </section>
 
-    <a href="CV.md" class="btn">📄 View My Resume</a>
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <div class="skills__content">
+                <ul>
+                    <li>Basic Python</li>
+                    <li>Kali Linux, Nmap, Metasploit, Empire</li>
+                    <li>Splunk, Microsoft Defender, SharePoint</li>
+                    <li>AWS (VPC, EC2, ASG, S3, CodePipeline, Beanstalk)</li>
+                    <li>GitHub, Linux, Windows</li>
+                </ul>
+            </div>
+        </section>
 
-    <div class="section">
-        <h2>🔐 Projects</h2>
-        <ul>
-            <li><a href="Projects/Network-Scan-Nmap/report.md">Nmap Network Scan</a></li>
-            <li><a href="Projects/Password-Cracking/hashcat.md">Password Cracking with Hashcat</a></li>
-            <li><a href="Projects/Malware-Analysis/static-analysis.md">Static Malware Analysis</a></li>
-        </ul>
-    </div>
+        <!--==================== PROJECTS ====================-->
+        <section class="portfolio section" id="projects">
+            <h2 class="section__title">Projects</h2>
+            <div class="portfolio__container container grid">
+                <div class="portfolio__item">Nmap Network Scan</div>
+                <div class="portfolio__item">Password Cracking with Hashcat</div>
+                <div class="portfolio__item">Static Malware Analysis</div>
+            </div>
+        </section>
 
-    <div class="section">
-        <h2>🧰 Tools & Notes</h2>
-        <ul>
-            <li><a href="Tools/metasploit-notes.md">Metasploit Notes</a></li>
-            <li><a href="Tools/burpsuite-guide.md">Burp Suite Guide</a></li>
-        </ul>
-    </div>
+        <!--==================== CONTACT ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <div class="contact__info">
+                <p>Email: <a href="mailto:jjtorres716@gmail.com">jjtorres716@gmail.com</a></p>
+                <p>GitHub: <a href="https://github.com/jtr2515" target="_blank">jtr2515</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/jason-torres-reyes-9048242b6/" target="_blank">LinkedIn Profile</a></p>
+            </div>
+        </section>
+    </main>
 
-    <div class="section">
-        <h2>📄 Certifications</h2>
-        <ul>
-            <li><a href="Certifications/proof-of-cert.md">My Certification Progress</a></li>
-        </ul>
-    </div>
-</div>
-
+    <footer class="footer">
+        <p>&copy; 2025 Jason Torres Reyes. All rights reserved.</p>
+    </footer>
 </body>
 </html>
