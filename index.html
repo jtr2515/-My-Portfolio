@@ -6,6 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Jason Torres Reyes | Cybersecurity Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .header-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .profile-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #00e5ff;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+  </style>
 </head>
 <body>
   <header class="header" id="header">
@@ -24,13 +42,16 @@
   <main class="main container">
     <!--==================== ABOUT ====================-->
     <section class="section" id="about">
-      <h2 class="section__title">Jason Torres Reyes</h2>
-      <p class="section__subtitle">Aspiring Cybersecurity Analyst</p>
-      <p class="about__description">
-        📍 Miami, FL | 📧 jjtorres716@gmail.com | 
-        <a href="https://github.com/jtr2515" target="_blank">GitHub</a> |
-        <a href="https://www.linkedin.com/in/jason-torres-reyes-9048242b6/" target="_blank">LinkedIn</a>
-      </p>
+      <div class="header-wrapper">
+        <img src="profile.jpg" alt="Jason Torres Reyes" class="profile-image" />
+        <h2 class="section__title">Jason Torres Reyes</h2>
+        <p class="section__subtitle">Aspiring Cybersecurity Analyst</p>
+        <p class="about__description">
+          📍 Miami, FL | 📧 jjtorres716@gmail.com | 
+          <a href="https://github.com/jtr2515" target="_blank">GitHub</a> |
+          <a href="https://www.linkedin.com/in/jason-torres-reyes-9048242b6/" target="_blank">LinkedIn</a>
+        </p>
+      </div>
       <p>
         🧠 <strong>Summary</strong><br>
         Cybersecurity student passionate about ethical hacking, cloud security, and digital defense. Skilled in penetration testing tools and cloud technologies across AWS and Microsoft platforms. Experienced in managing cloud deployments, automating CI/CD pipelines, and administering Microsoft 365 environments including user access, security policies, and collaboration tools. Eager to contribute to security operations teams and grow in threat detection, remediation, and infrastructure hardening.
