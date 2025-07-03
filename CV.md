@@ -43,10 +43,10 @@ Relevant Coursework: Network Security, Ethical Hacking, Digital Forensics
 ---
 
 ## 📄 Certifications  
-- CompTIA Security+ *(In Progress)*  
+- CompTIA Security+   
 - AWS Cloud Practitioner *(In Progress)*  
 - Cisco Networking *(In Progress)*  
-*(Upload supporting files in the `Certifications/` folder)*
+  
 
 ---
 
