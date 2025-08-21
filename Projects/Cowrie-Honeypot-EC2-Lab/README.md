@@ -1,44 +1,41 @@
-# Honeypot EC2 Lab – Cowrie SSH Brute Force Simulation
+# Static Routes Lab
 
-This lab demonstrates how to deploy and test a Cowrie honeypot on an AWS EC2 instance, using Hydra from a Kali Linux machine to simulate SSH brute-force attacks.
+This repository contains a Packet Tracer lab demonstrating the configuration of **static routes** between three routers.
 
-## 🛠 Setup Overview
+## 📌 Topology
+- **R1 ↔ R2 ↔ R3**
+- Networks:
+  - R1: `10.1.1.1`, `192.168.1.1`, `192.168.3.1`
+  - R2: `10.2.2.1`, `192.168.1.2`, `192.168.2.1`
+  - R3: `10.3.3.1`, `192.168.2.2`, `192.168.3.2`
 
-1. Launch EC2 with Cowrie on port 2222.
-2. Configure firewall for controlled access.
-3. Launch Kali Linux with Hydra.
-4. Simulate brute force using `rockyou.txt`.
-5. Capture logs from Cowrie session.
+<img src="network-diagram.jpg" alt="Network Diagram" width="600">
 
-## 🔍 Key Details
+## ⚙️ Files
+- **Static-Routes.pkt** → Packet Tracer lab file  
+- **network-diagram.jpg** → Topology diagram  
 
-- EC2 Public IP: `54.91.232.240`
-- Cowrie port: `2222`
-- Hydra wordlist: `/usr/share/wordlists/rockyou.txt`
-- Logs found in `cowrie/log/cowrie.log`
+## 🚀 How to Use
+1. Download and open the `.pkt` file with Cisco Packet Tracer.
+2. Configure static routes on each router:
+   - **R1**
+     ```bash
+     ip route 192.168.2.0 255.255.255.0 10.1.1.2
+     ip route 192.168.3.0 255.255.255.0 10.1.1.2
+     ```
+   - **R2**
+     ```bash
+     ip route 192.168.3.0 255.255.255.0 10.3.3.2
+     ip route 192.168.1.0 255.255.255.0 10.1.1.1
+     ```
+   - **R3**
+     ```bash
+     ip route 192.168.1.0 255.255.255.0 10.3.3.1
+     ip route 192.168.2.0 255.255.255.0 10.3.3.1
+     ```
 
-## 📸 Screenshots
-
-Screenshots are provided and named in order (01.png, 02.png, ...) in the `screenshots/` folder for easy GitHub rendering.
-
-## ⏱ Brute Force Summary
-
-- Hydra attempted over 14 million combinations.
-- Attack timed out after initial attempts due to Cowrie handling.
-
-## 📁 Structure
-
-```
-honeypot_ec2_lab_complete/
-│
-├── README.md
-├── DISCLAIMER.md
-└── screenshots/
-    ├── 01.png
-    ├── 02.png
-    └── ...
-```
-
-## 🔐 Security Reminder
-
-This project is for educational use only. Never run such configurations in a production environment or open internet without protection.
+## 🛡️ Purpose
+This lab helps students and professionals practice:
+- Static routing
+- IP addressing
+- Packet Tracer network simulations
