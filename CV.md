@@ -23,18 +23,6 @@ Cybersecurity student passionate about ethical hacking, cloud security, and digi
 
 ---
 
-## 💼 Projects  
-### 🔍 Nmap Network Scan  
-Scanned and documented open ports, services, and vulnerabilities on local and public targets. [View Report](./Projects/Network-Scan-Nmap/report.md)
-
-### 🔓 Password Cracking with Hashcat  
-Simulated brute-force attacks on password hashes to demonstrate weak password risks. [View Report](./Projects/Password-Cracking/hashcat.md)
-
-### 🧪 Static Malware Analysis  
-Performed file inspection and behavioral analysis on sample malware. [View Report](./Projects/Malware-Analysis/static-analysis.md)
-
----
-
 ## 🎓 Education  
 **Atlantis University**  
 Associate of Science in Information Technology – Expected 2025  
